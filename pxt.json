@@ -22,6 +22,7 @@
         "math.ts",
         "motors.ts",
         "navigation.ts",
+        "navigation_helpers.ts",
         "smart_turns.ts",
         "line_follow.ts",
         "ramp_line_follow.ts",
