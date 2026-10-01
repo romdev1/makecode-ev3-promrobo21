@@ -44,7 +44,7 @@ namespace motions {
     export const pidLineFollow = new automation.PIDController(); // PID для регулирования движения по линии
 
     // Вспомогательная функция: применить PIDConfig к pidLineFollow (заменяет 5 одинаковых строк в каждой функции)
-    function applyPIDConfig(cfg: PIDConfig, saturation: number = 200) {
+    export function applyPIDConfig(cfg: PIDConfig, saturation: number = 200) {
         pidLineFollow.setGains(cfg.Kp, cfg.Ki, cfg.Kd);
         pidLineFollow.setDerivativeFilter(cfg.Kf);
         pidLineFollow.setControlSaturation(-saturation, saturation);
@@ -79,7 +79,11 @@ namespace motions {
         return distRollingAfterIntersection;
     }
 
-    // setDistRollingFromLineAfterIntersection / getDistRollingFromLineAfterIntersection удалены (deprecated)
+    // setDistRollingFromLineAfterIntersection / getDistRollingFromLineAfterIntersection удалены как блоки (deprecated)
+    // Но функция-геттер нужна внутри actionAfterLineMotion — оставляем без блок-аннотации
+    export function getDistRollingFromLineAfterIntersection(): number {
+        return distContinueRollFromLineAfterIntersection;
+    }
 
     /**
      * Установить пороговое значение отражения для линии.
