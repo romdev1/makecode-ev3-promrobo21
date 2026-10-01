@@ -27,7 +27,7 @@ namespace custom {
                         max: 5000
                     },
                     v: {
-                        val: motions.lineFollowToDistance2SensorV,
+                        val: motions.cfgDist2S.v,
                         changeStep: 5,
                         min: 5,
                         max: 100
@@ -110,25 +110,25 @@ namespace custom {
                         val: true
                     },
                     v: {
-                        val: motions.lineFollowCrossIntersection2SensorV,
+                        val: motions.cfgCrossIntersection2S.v,
                         changeStep: 5,
                         min: 5,
                         max: 100
                     },
                     Kp: {
-                        val: motions.lineFollowCrossIntersection2SensorKp,
+                        val: motions.cfgCrossIntersection2S.Kp,
                        changeStep: 0.05
                     },
                     Ki: {
-                        val: motions.lineFollowCrossIntersection2SensorKi,
+                        val: motions.cfgCrossIntersection2S.Ki,
                         changeStep: 0.001
                     },
                     Kd: {
-                        val: motions.lineFollowCrossIntersection2SensorKd,
+                        val: motions.cfgCrossIntersection2S.Kd,
                         changeStep: 0.1
                     },
                     N: {
-                        val: motions.lineFollowCrossIntersection2SensorKf,
+                        val: motions.cfgCrossIntersection2S.Kf,
                         changeStep: 0.1
                     }
                 },
@@ -147,25 +147,25 @@ namespace custom {
                         val: true
                     },
                     v: {
-                        val: motions.lineFollowToDistance2SensorV,
+                        val: motions.cfgDist2S.v,
                         changeStep: 5,
                         min: 5,
                         max: 100
                     },
                     Kp: {
-                        val: motions.lineFollowToDistance2SensorKp,
+                        val: motions.cfgDist2S.Kp,
                         changeStep: 0.05
                     },
                     Ki: {
-                        val: motions.lineFollowToDistance2SensorKi,
+                        val: motions.cfgDist2S.Ki,
                         changeStep: 0.001
                     },
                     Kd: {
-                        val: motions.lineFollowToDistance2SensorKd,
+                        val: motions.cfgDist2S.Kd,
                         changeStep: 0.1
                     },
                     N: {
-                        val: motions.lineFollowToDistance2SensorKf,
+                        val: motions.cfgDist2S.Kf,
                         changeStep: 0.1
                     }
                 },
@@ -184,25 +184,25 @@ namespace custom {
                         val: true
                     },
                     v: {
-                        val: motions.lineFollowToDistance2SensorV,
+                        val: motions.cfgDist2S.v,
                         changeStep: 5,
                         min: 5,
                         max: 100
                     },
                     Kp: {
-                        val: motions.lineFollowToDistance2SensorKp,
+                        val: motions.cfgDist2S.Kp,
                         changeStep: 0.05
                     },
                     Ki: {
-                        val: motions.lineFollowToDistance2SensorKi,
+                        val: motions.cfgDist2S.Ki,
                         changeStep: 0.001
                     },
                     Kd: {
-                        val: motions.lineFollowToDistance2SensorKd,
+                        val: motions.cfgDist2S.Kd,
                         changeStep: 0.1
                     },
                     N: {
-                        val: motions.lineFollowToDistance2SensorKf,
+                        val: motions.cfgDist2S.Kf,
                         changeStep: 0.1
                     }
                 },
