@@ -39,13 +39,7 @@ namespace motions {
     // Движение по линии на расстояние правым датчиком
     export let cfgDistRight: PIDConfig           = { v: 50, Kp: 0.7, Ki: 0, Kd: 0, Kf: 0 };
 
-    // ── Обратная совместимость: старые имена → новые объекты ───────────────────
-    // Позволяет params.ts и внешнему коду работать без изменений
-    export let lineFollowCrossIntersection2SensorV:  number { get() { return cfgCrossIntersection2S.v;  } set(x) { cfgCrossIntersection2S.v  = x; } }
-    export let lineFollowCrossIntersection2SensorKp: number { get() { return cfgCrossIntersection2S.Kp; } set(x) { cfgCrossIntersection2S.Kp = x; } }
-    export let lineFollowCrossIntersection2SensorKi: number { get() { return cfgCrossIntersection2S.Ki; } set(x) { cfgCrossIntersection2S.Ki = x; } }
-    export let lineFollowCrossIntersection2SensorKd: number { get() { return cfgCrossIntersection2S.Kd; } set(x) { cfgCrossIntersection2S.Kd = x; } }
-    export let lineFollowCrossIntersection2SensorKf: number { get() { return cfgCrossIntersection2S.Kf; } set(x) { cfgCrossIntersection2S.Kf = x; } }
+
 
     export const pidLineFollow = new automation.PIDController(); // PID для регулирования движения по линии
 
